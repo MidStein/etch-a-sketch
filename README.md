@@ -1,1 +1,4 @@
 # etch-a-sketch
+In this project, I have made an etch-a-sketch board where the user decides how many squares are available. On hovering over the squares of the grid, they get highlighted and leave a visual trail of the movement of his mouse by the user. This gives the suggestion that the user is drawing a sketch, hence the name of the project etch-a-sketch.
+
+Upon completing this project I would have cleared up all basic concepts of using DOM to select elements, change styles of elements and to create new elements as well as working with events and implementing event listeners. I would also learn how to make an entire web page's content merely through javascript as not a lot more than a skeleton html file can be used for this project.
