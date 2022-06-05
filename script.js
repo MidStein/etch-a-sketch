@@ -1,5 +1,19 @@
 function highlightBox() {
-    this.classList.add('trail');
+    if (this.style.background == '') {
+        let RValue = Math.floor(Math.random() * 256);
+        let GValue = Math.floor(Math.random() * 256)
+        let BValue = Math.floor(Math.random() * 256);
+        this.style.background = `rgba(${RValue}, ${GValue}, ${BValue}, 0.1)`;
+    } else {
+        let currentBackground = this.style.background;
+        let beforeA = currentBackground.slice(0, currentBackground.length - 4);
+        let onA = currentBackground.slice(currentBackground.length - 4, currentBackground.length - 1);
+        if (onA === '1.0') {
+            return;
+        }
+        onA = Number(onA) + 0.1;
+        this.style.background = beforeA + onA + ')';
+    }
 }
 function createGrid(n) {
     let row;

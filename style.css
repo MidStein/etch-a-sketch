@@ -12,9 +12,6 @@ html {
     display: flex;
 }
 .column-box {
-    background: #eee8aa;
+    background: #fff;
     border: 1px solid #444;
-}
-.trail {
-    background: #808000;
 }
